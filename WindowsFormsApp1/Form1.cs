@@ -13,9 +13,9 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
     
-public partial class Form1 : Form
+public partial class Escalation : Form
     {
-        public Form1()
+        public Escalation()
         {
             InitializeComponent();
         }
@@ -73,6 +73,11 @@ public partial class Form1 : Form
               //  public void empty()
 
 }
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

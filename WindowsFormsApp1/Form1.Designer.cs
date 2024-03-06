@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class Escalation
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,6 @@
             this.Q10 = new System.Windows.Forms.Label();
             this.Tb2 = new System.Windows.Forms.TextBox();
             this.Valu1234 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -58,6 +57,7 @@
             this.Q14 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.ERASE = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // COPY
@@ -185,14 +185,6 @@
             this.Valu1234.Size = new System.Drawing.Size(61, 20);
             this.Valu1234.TabIndex = 18;
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(151, 142);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(285, 20);
-            this.textBox6.TabIndex = 19;
-            // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(151, 166);
@@ -202,10 +194,10 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(151, 199);
+            this.textBox8.Location = new System.Drawing.Point(151, 192);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(285, 43);
+            this.textBox8.Size = new System.Drawing.Size(559, 50);
             this.textBox8.TabIndex = 21;
             // 
             // textBox11
@@ -243,7 +235,7 @@
             // Q12
             // 
             this.Q12.AutoSize = true;
-            this.Q12.Location = new System.Drawing.Point(3, 353);
+            this.Q12.Location = new System.Drawing.Point(-2, 353);
             this.Q12.Name = "Q12";
             this.Q12.Size = new System.Drawing.Size(115, 13);
             this.Q12.TabIndex = 28;
@@ -316,11 +308,21 @@
             this.ERASE.UseVisualStyleBackColor = false;
             this.ERASE.Click += new System.EventHandler(this.ERASE_Click);
             // 
-            // Form1
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(151, 141);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(285, 21);
+            this.comboBox1.TabIndex = 37;
+            // 
+            // Escalation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(767, 539);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ERASE);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.Q14);
@@ -336,7 +338,6 @@
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.Valu1234);
             this.Controls.Add(this.Tb2);
             this.Controls.Add(this.Q10);
@@ -351,7 +352,7 @@
             this.Controls.Add(this.Tb1);
             this.Controls.Add(this.Q1);
             this.Controls.Add(this.COPY);
-            this.Name = "Form1";
+            this.Name = "Escalation";
             this.Text = "P1 Escalation";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -373,7 +374,6 @@
         private System.Windows.Forms.Label Q10;
         private System.Windows.Forms.TextBox Tb2;
         private System.Windows.Forms.TextBox Valu1234;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox11;
@@ -389,6 +389,7 @@
         private System.Windows.Forms.Label Q14;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Button ERASE;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
