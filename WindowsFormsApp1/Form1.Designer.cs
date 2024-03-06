@@ -58,12 +58,13 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.ERASE = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.P1st = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // COPY
             // 
             this.COPY.BackColor = System.Drawing.Color.LimeGreen;
-            this.COPY.Location = new System.Drawing.Point(151, 12);
+            this.COPY.Location = new System.Drawing.Point(471, 12);
             this.COPY.Name = "COPY";
             this.COPY.Size = new System.Drawing.Size(131, 37);
             this.COPY.TabIndex = 1;
@@ -215,6 +216,7 @@
             this.YN.Name = "YN";
             this.YN.Size = new System.Drawing.Size(64, 21);
             this.YN.TabIndex = 25;
+            this.YN.SelectedIndexChanged += new System.EventHandler(this.YN_SelectedIndexChanged);
             // 
             // Q11
             // 
@@ -285,22 +287,22 @@
             this.Q14.AutoSize = true;
             this.Q14.Location = new System.Drawing.Point(0, 384);
             this.Q14.Name = "Q14";
-            this.Q14.Size = new System.Drawing.Size(60, 13);
+            this.Q14.Size = new System.Drawing.Size(63, 13);
             this.Q14.TabIndex = 34;
-            this.Q14.Text = "Chronology";
+            this.Q14.Text = "Chronology:";
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(82, 381);
+            this.textBox10.Location = new System.Drawing.Point(3, 417);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(628, 146);
+            this.textBox10.Size = new System.Drawing.Size(609, 165);
             this.textBox10.TabIndex = 35;
             // 
             // ERASE
             // 
             this.ERASE.BackColor = System.Drawing.Color.Red;
-            this.ERASE.Location = new System.Drawing.Point(6, 12);
+            this.ERASE.Location = new System.Drawing.Point(323, 12);
             this.ERASE.Name = "ERASE";
             this.ERASE.Size = new System.Drawing.Size(138, 37);
             this.ERASE.TabIndex = 36;
@@ -315,13 +317,23 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(285, 21);
             this.comboBox1.TabIndex = 37;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // P1st
+            // 
+            this.P1st.FormattingEnabled = true;
+            this.P1st.Location = new System.Drawing.Point(1, 12);
+            this.P1st.Name = "P1st";
+            this.P1st.Size = new System.Drawing.Size(129, 21);
+            this.P1st.TabIndex = 38;
             // 
             // Escalation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
-            this.ClientSize = new System.Drawing.Size(767, 539);
+            this.ClientSize = new System.Drawing.Size(614, 585);
+            this.Controls.Add(this.P1st);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ERASE);
             this.Controls.Add(this.textBox10);
@@ -354,6 +366,7 @@
             this.Controls.Add(this.COPY);
             this.Name = "Escalation";
             this.Text = "P1 Escalation";
+            this.Load += new System.EventHandler(this.Escalation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,6 +403,7 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Button ERASE;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox P1st;
     }
 }
 
