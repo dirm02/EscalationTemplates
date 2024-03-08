@@ -59,6 +59,7 @@
             this.ERASE = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.P1st = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // COPY
@@ -302,6 +303,8 @@
             // ERASE
             // 
             this.ERASE.BackColor = System.Drawing.Color.Red;
+            this.ERASE.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ERASE.FlatAppearance.BorderSize = 0;
             this.ERASE.Location = new System.Drawing.Point(323, 12);
             this.ERASE.Name = "ERASE";
             this.ERASE.Size = new System.Drawing.Size(138, 37);
@@ -327,12 +330,24 @@
             this.P1st.Size = new System.Drawing.Size(129, 21);
             this.P1st.TabIndex = 38;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.Location = new System.Drawing.Point(196, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 37);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "SAVE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Escalation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(614, 585);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.P1st);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ERASE);
@@ -365,6 +380,7 @@
             this.Controls.Add(this.Q1);
             this.Controls.Add(this.COPY);
             this.Name = "Escalation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "P1 Escalation";
             this.Load += new System.EventHandler(this.Escalation_Load);
             this.ResumeLayout(false);
@@ -404,6 +420,7 @@
         private System.Windows.Forms.Button ERASE;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox P1st;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -16,6 +16,8 @@ namespace WindowsFormsApp1
     
 public partial class Escalation : Form
     {
+
+    SavedItems rg = new SavedItems();
         public Escalation()
         {
             InitializeComponent();
@@ -114,6 +116,11 @@ public partial class Escalation : Form
         }
 
         private void YN_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
